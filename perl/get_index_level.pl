@@ -246,7 +246,7 @@ sub main
 	
 		my @undeal = fetch_undeal($level);
 		if (!@undeal) {
-			last;
+			return;
 		}
 		
 		while (my $row = pop @undeal) {

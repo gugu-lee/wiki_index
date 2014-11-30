@@ -158,6 +158,8 @@ rel_id int default 0
 );
 insert into page_index_dl values(1,0,'%E5%9C%B0%E7%90%86','http://zh.wikipedia.org/wiki/Category:%E5%9C%B0%E7%90%86',23,10,0,1,1,0);
 
+insert into page_index(parent_id,title,url,sub_category_count,page_count,state,path,level,rel_id) values(0,'%E5%9C%B0%E7%90%86','http://zh.wikipedia.org/wiki/Category:%E5%9C%B0%E7%90%86',23,10,0,1,1,0);
+
 
 
 #math
@@ -176,7 +178,7 @@ rel_id int default 0
 );
 insert into page_index_xs values(1,0,'%E6%95%B0%E5%AD%A6','http://zh.wikipedia.org/wiki/Category:%E6%95%B0%E5%AD%A6',57,52,0,1,1,0);
 
-
+insert into page_index(parent_id,title,url,sub_category_count,page_count,state,path,level,rel_id) values(0,'%E6%95%B0%E5%AD%A6','http://zh.wikipedia.org/wiki/Category:%E6%95%B0%E5%AD%A6',57,52,0,1,1,0);
 
 create table page_index_wlx
 (
@@ -293,3 +295,6 @@ level int default 0,
 rel_id int default 0
 );
 insert into page_index_swx values(1,0,'%E7%94%9F%E7%89%A9%E5%AD%A6','http://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E5%AD%A6',66,155,0,1,1,0);
+
+
+update page_index set path=concat('0',last_insert_id()) where index_id=last_insert_id();

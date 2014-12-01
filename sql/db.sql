@@ -296,5 +296,41 @@ rel_id int default 0
 );
 insert into page_index_swx values(1,0,'%E7%94%9F%E7%89%A9%E5%AD%A6','http://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E5%AD%A6',66,155,0,1,1,0);
 
-
+#wlx
+insert into page_index(parent_id,title,url,sub_category_count,page_count,state,path,level,rel_id) values(0,'%E7%89%A9%E7%90%86%E5%AD%A6','http://zh.wikipedia.org/wiki/Category:%E7%89%A9%E7%90%86%E5%AD%A6',41,76,0,1,1,0);
 update page_index set path=concat('0',last_insert_id()) where index_id=last_insert_id();
+
+#lx
+insert into page_index(parent_id,title,url,sub_category_count,page_count,state,path,level,rel_id) values(0,'%E5%8A%9B%E5%AD%B8','http://zh.wikipedia.org/wiki/Category:%E5%8A%9B%E5%AD%B8',16,69,0,1,1,0);
+update page_index set path=concat('0',last_insert_id()) where index_id=last_insert_id();
+
+#hx(ERROR)
+insert into page_index(parent_id,title,url,sub_category_count,page_count,state,path,level,rel_id) values(0,'%E5%8C%96%E5%AD%A6','http://zh.wikipedia.org/wiki/Category:%E5%8C%96%E5%AD%A6',16,69,0,1,1,0);
+update page_index set path=concat('0',last_insert_id()) where index_id=last_insert_id();
+
+#yx
+insert into page_index(parent_id,title,url,sub_category_count,page_count,state,path,level,rel_id) values(0,'%E5%8C%BB%E5%AD%A6','http://zh.wikipedia.org/wiki/Category:%E5%8C%BB%E5%AD%A6',57,175,0,1,1,0);
+update page_index set path=concat('0',last_insert_id()) where index_id=last_insert_id();
+
+#yx
+
+insert into page_index(parent_id,title,url,sub_category_count,page_count,state,path,level,rel_id) values(0,'%E8%97%A5%E5%AD%B8','http://zh.wikipedia.org/wiki/Category:%E8%97%A5%E5%AD%B8',16,40,0,1,1,0);
+update page_index set path=concat('0',last_insert_id()) where index_id=last_insert_id();
+
+#nx
+insert into page_index(parent_id,title,url,sub_category_count,page_count,state,path,level,rel_id) values(0,'%E5%86%9C%E5%AD%A6','http://zh.wikipedia.org/wiki/Category:%E5%86%9C%E5%AD%A6',10,17,0,1,1,0);
+update page_index set path=concat('0',last_insert_id()) where index_id=last_insert_id();
+
+#XXKX
+insert into page_index(parent_id,title,url,sub_category_count,page_count,state,path,level,rel_id) values(0,'%E8%B3%87%E8%A8%8A%E7%A7%91%E5%AD%B8','http://zh.wikipedia.org/wiki/Category:%E8%B3%87%E8%A8%8A%E7%A7%91%E5%AD%B8',25,56,0,1,1,0);
+update page_index set path=concat('0',last_insert_id()) where index_id=last_insert_id();
+
+#XTLL
+insert into page_index(parent_id,title,url,sub_category_count,page_count,state,path,level,rel_id) values(0,'%E7%B3%BB%E7%B5%B1%E7%90%86%E8%AB%96','http://zh.wikipedia.org/wiki/Category:%E7%B3%BB%E7%B5%B1%E7%90%86%E8%AB%96',16,25,0,1,1,0);
+update page_index set path=concat('0',last_insert_id()) where index_id=last_insert_id();
+
+#MMX
+
+insert into page_index(parent_id,title,url,sub_category_count,page_count,state,path,level,rel_id) values(0,'%E5%AF%86%E7%A0%81%E5%AD%A6','http://zh.wikipedia.org/wiki/Category:%E5%AF%86%E7%A0%81%E5%AD%A6',15,81,0,1,1,0);
+update page_index set path=concat('0',last_insert_id()) where index_id=last_insert_id();
+

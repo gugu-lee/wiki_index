@@ -99,7 +99,7 @@ sub main
 {
 	open_db();
 	open($fh, '>', "Index_C1.html") or die "Can't redirect STDOUT: $!";
-	print $fh "<!DOCTYPE HTML><HTML lang=\"zh_CN\"><HEAD><meta charset=\"GBK\"> <TITLE> Index </TITLE> </HEAD> <BODY> <p><font color=\"blue\" size=\"4\">\n<div class=\"css-treeview\">\n<ul>";
+	print $fh "<!DOCTYPE HTML><HTML lang=\"zh_CN\"><HEAD><meta charset=\"GBK\"> <link rel=\"stylesheet\"	href=\"tree.css\"/><TITLE> Index </TITLE> </HEAD> <BODY> <p><font color=\"blue\" size=\"4\">\n<div class=\"css-treeview\">\n<ul>";
 	
 	my $i=0;
 	my $page_size=10000;
